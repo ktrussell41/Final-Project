@@ -7,6 +7,9 @@
 using namespace std;
 
 int main(){
+	string name;
+
+
 
 	system("pause");
 	return 0;
