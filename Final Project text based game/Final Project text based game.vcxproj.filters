@@ -18,18 +18,18 @@
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Name.cpp">
+    <ClCompile Include="ItemStore.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ItemStore.cpp">
+    <ClCompile Include="OptionStorage.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Name.h">
+    <ClInclude Include="ItemStore.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ItemStore.h">
+    <ClInclude Include="OptionStorage.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

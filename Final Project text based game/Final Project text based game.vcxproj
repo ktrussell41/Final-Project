@@ -64,13 +64,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="OptionStorage.cpp" />
     <ClCompile Include="ItemStore.cpp" />
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="Name.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ItemStore.h" />
-    <ClInclude Include="Name.h" />
+    <ClInclude Include="OptionStorage.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
