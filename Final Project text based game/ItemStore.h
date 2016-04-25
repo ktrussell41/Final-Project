@@ -5,5 +5,6 @@ private:
 	bool aab;
 	bool aac;
 	bool aad;
+public:
 
 };
