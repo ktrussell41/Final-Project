@@ -31,7 +31,9 @@ int main(){
 		return 0;
 	}
 
-	
+	cout << "You wake up stranded in a rowboat with two islands in view. Sail to the island on the right or the left?" << endl;
+	switch (aaaab):
+		
 
 	system("pause");
 	return 0;
