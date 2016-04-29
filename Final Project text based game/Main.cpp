@@ -37,7 +37,7 @@ int main(){
 
 	cout << "You wake up stranded in a rowboat with two islands in view. Sail to the island on the right or the left?" << endl;
 	switch (aaaab){
-
+		
 	}
 		
 
