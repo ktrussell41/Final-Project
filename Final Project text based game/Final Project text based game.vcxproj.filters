@@ -18,18 +18,24 @@
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ItemStore.cpp">
+    <ClCompile Include="OptionStorage.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="OptionStorage.cpp">
+    <ClCompile Include="KeyStore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WeaponStore.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ItemStore.h">
+    <ClInclude Include="OptionStorage.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="OptionStorage.h">
+    <ClInclude Include="KeyStore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WeaponStore.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

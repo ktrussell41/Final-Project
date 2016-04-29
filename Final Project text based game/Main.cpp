@@ -3,12 +3,16 @@
 #include<string>
 #include<vector>
 #include<iomanip>
+#include "OptionStorage.h"
+#include "KeyStore.h"
+#include "WeaponStore.h"
 
 using namespace std;
 
 int main(){
 	string selection;
 	bool game = false;
+	bool aaaab = false;
 	
 	do{
 		cout << "Start game" << endl;
@@ -32,7 +36,9 @@ int main(){
 	}
 
 	cout << "You wake up stranded in a rowboat with two islands in view. Sail to the island on the right or the left?" << endl;
-	switch (aaaab):
+	switch (aaaab){
+
+	}
 		
 
 	system("pause");
