@@ -5,5 +5,5 @@ private:
 	bool aaaab;
 public:
 	void setaaaabDefault();
-	int getaaaabDefault();
+	bool getaaaabDefault();
 };
