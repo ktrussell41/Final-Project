@@ -35,9 +35,11 @@ int main(){
 		return 0;
 	}
 
-	cout << "You wake up stranded in a rowboat with two islands in view. Sail to the island on the right or the left?" << endl;
+	cout << "You wake up stranded in a rowboat with two islands in view. Sail to the island" << endl << "on the right or the left?" << endl;
 	switch (aaaab){
-		
+	default:
+		cout << "Please input a valid number." << endl;
+
 	}
 		
 
