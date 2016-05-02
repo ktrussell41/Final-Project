@@ -13,6 +13,7 @@ int main(){
 	string selection;
 	bool game = false;
 	bool aaaab = false;
+	OptionStorage option;
 	
 	do{
 		cout << "Start game" << endl;
@@ -39,7 +40,14 @@ int main(){
 	switch (aaaab){
 	default:
 		cout << "Please input a valid number." << endl;
+		break;
+	case 1:
+		cout << "You sail to the island on the right." << endl;
+		aaaab = true;
 
+		if (aaaab = true){
+			option.setaaaabDefault(true);
+		}
 	}
 		
 

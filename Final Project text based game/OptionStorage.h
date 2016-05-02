@@ -4,6 +4,6 @@ class OptionStorage{
 private:
 	bool aaaab;
 public:
-	void setaaaabDefault();
+	void setaaaabDefault(bool value);
 	bool getaaaabDefault();
 };
