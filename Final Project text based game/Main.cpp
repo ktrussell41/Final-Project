@@ -37,17 +37,20 @@ int main(){
 	}
 
 	cout << "You wake up stranded in a rowboat with two islands in view. Sail to the island" << endl << "on the right or the left?" << endl;
+	cout << "1. " << endl;
+	cout << "2. " << endl;
 	switch (aaaab){
 	default:
 		cout << "Please input a valid number." << endl;
 		break;
 	case 1:
 		cout << "You sail to the island on the right." << endl;
-		aaaab = true;
-
-		if (aaaab = true){
-			option.setaaaabDefault(true);
-		}
+		option.setaaaabDefault(true);
+		break;
+	case 2:
+		cout << " " << endl;
+		option.setaaaacDefault(true);
+		break;
 	}
 		
 
