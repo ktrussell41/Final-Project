@@ -11,8 +11,9 @@ using namespace std;
 
 int main(){
 	string selection;
+	int switchselection = 0;
 	bool game = false;
-	bool aaaab = false;
+	int firstoption = 0;
 	OptionStorage option;
 	
 	do{
@@ -36,23 +37,21 @@ int main(){
 		return 0;
 	}
 
-	cout << "You wake up stranded in a rowboat with two islands in view. Sail to the island" << endl << "on the right or the left?" << endl;
-	cout << "1. " << endl;
-	cout << "2. " << endl;
-	switch (aaaab){
-	default:
-		cout << "Please input a valid number." << endl;
-		break;
+	cout << "You wake up stranded on an island. Walk along the beach or head inland?" << endl;
+	cout << "1. Walk along the beach. " << endl;
+	cout << "2. Head inland. " << endl;
+	cin >> switchselection;
+	switch (firstoption){
 	case 1:
-		cout << "You sail to the island on the right." << endl;
+		cout << "You walked along the beach." << endl;
 		option.setaaaabDefault(true);
 		break;
 	case 2:
-		cout << " " << endl;
+		cout << "You started to head inland." << endl;
 		option.setaaaacDefault(true);
 		break;
 	}
-		
+	
 
 	system("pause");
 	return 0;
