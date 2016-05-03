@@ -37,21 +37,25 @@ int main(){
 		return 0;
 	}
 
-	cout << "You wake up stranded on an island. Walk along the beach or head inland?" << endl;
-	cout << "1. Walk along the beach. " << endl;
-	cout << "2. Head inland. " << endl;
-	cin >> switchselection;
-	switch (firstoption){
-	case 1:
-		cout << "You walked along the beach." << endl;
-		option.setaaaabDefault(true);
-		break;
-	case 2:
-		cout << "You started to head inland." << endl;
-		option.setaaaacDefault(true);
-		break;
-	}
-	
+	do{
+		cout << "You wake up stranded on an island. Walk along the beach or head inland?" << endl;
+		cout << "1. Walk along the beach. " << endl;
+		cout << "2. Head inland. " << endl;
+		cin >> switchselection;
+		switch (firstoption){
+		case 1:
+			cout << "You walked along the beach." << endl;
+			option.setaaaabDefault(true);
+			firstoption = 1;
+			break;
+		case 2:
+			cout << "You started to head inland." << endl;
+			option.setaaaacDefault(true);
+			firstoption = 1;
+			break;
+		}
+	} while (firstoption = 0);
+
 
 	system("pause");
 	return 0;
