@@ -42,7 +42,7 @@ int main(){
 		cout << "1. Walk along the beach. " << endl;
 		cout << "2. Head inland. " << endl;
 		cin >> switchselection;
-		switch (firstoption){
+		switch (switchselection){
 		case 1:
 			cout << "You walked along the beach." << endl;
 			option.setaaaabDefault(true);
@@ -54,7 +54,7 @@ int main(){
 			firstoption = 1;
 			break;
 		}
-	} while (firstoption = 0);
+	} while (switchselection = 0);
 
 
 	system("pause");
