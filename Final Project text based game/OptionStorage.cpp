@@ -27,3 +27,17 @@ void OptionStorage::setaaaaeDefault(bool value){
 bool OptionStorage::getaaaaeDefault(){
 	return aaaae;
 }
+
+void OptionStorage::setaaaajDefault(bool value){
+	aaaaj = value;
+}
+bool OptionStorage::getaaaajDefault(){
+	return aaaaj;
+}
+
+void OptionStorage::setaaaakDefault(bool value){
+	aaaak = value;
+}
+bool OptionStorage::getaaaakDefault(){
+	return aaaak;
+}
