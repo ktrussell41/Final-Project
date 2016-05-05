@@ -21,7 +21,7 @@ int main(){
 		cout << "Instructions" << endl;
 		getline(cin,selection);
 		if (selection == "Instructions"){
-			cout << "When making your decision make sure to capitalize the first letter and make sure everything is spelt right." << endl;
+			cout << "When making your decision make sure to input a valid number. There will be only two(2) options so the only valid numbers should be 1 and 2." << endl;
 		} 
 		else{
 			game = true;
