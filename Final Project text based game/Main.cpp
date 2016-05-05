@@ -13,7 +13,6 @@ int main(){
 	string selection;
 	int switchselection = 0;
 	bool game = false;
-	int firstoption = 0;
 	OptionStorage option;
 	
 	do{
@@ -46,15 +45,23 @@ int main(){
 		case 1:
 			cout << "You walked along the beach." << endl;
 			option.setaaaabDefault(true);
-			firstoption = 1;
+			game = true;
 			break;
 		case 2:
 			cout << "You started to head inland." << endl;
 			option.setaaaacDefault(true);
-			firstoption = 1;
+			game = false;
 			break;
 		}
 	} while (switchselection = 0);
+
+	if (game = true){
+		do{
+			cout << "You walk along the beach and find a small rusted key. Pick it up or leave it?" << endl;
+			cout << "1. Pick it up." << endl;
+			cout << "2. Leave it." << endl;
+		} while (switchselection = 0);
+	}
 
 
 	system("pause");
