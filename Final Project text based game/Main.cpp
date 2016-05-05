@@ -56,7 +56,7 @@ int main(){
 		}
 	} while (switchselection = 0);
 
-	if (game = true){
+	if (game == true){
 		do{
 			cout << "You walk along the beach and find a small rusted key. Pick it up or leave it?" << endl;
 			cout << "1. Pick it up." << endl;
@@ -71,6 +71,19 @@ int main(){
 			case 2:
 				cout << "You left the key." << endl;
 				option.setaaaaeDefault(true);
+				break;
+			}
+		} while (switchselection = 0);
+	}
+	else{
+		do{
+			cout << "You started to head inland. You see a temple. Enter it or look around the island more?" << endl;
+			cout << "1. Enter the temple." << endl;
+			cout << "2. Look around the island more." << endl;
+			cin >> switchselection;
+			switch (switchselection){
+			case 1:
+				cout << "Test" << endl;
 				break;
 			}
 		} while (switchselection = 0);
