@@ -14,6 +14,7 @@ int main(){
 	int switchselection = 0;
 	bool game = false;
 	OptionStorage option;
+	KeyStore key;
 	
 	do{
 		cout << "Start game" << endl;
@@ -60,6 +61,18 @@ int main(){
 			cout << "You walk along the beach and find a small rusted key. Pick it up or leave it?" << endl;
 			cout << "1. Pick it up." << endl;
 			cout << "2. Leave it." << endl;
+			cin >> switchselection;
+			switch (switchselection){
+			case 1:
+				cout << "You picked up the key." << endl;
+				option.setaaaadDefault(true);
+				key.setkabDefault(true);
+				break;
+			case 2:
+				cout << "You left the key." << endl;
+				option.setaaaaeDefault(true);
+				break;
+			}
 		} while (switchselection = 0);
 	}
 
