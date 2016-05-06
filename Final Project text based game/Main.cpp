@@ -13,6 +13,7 @@ int main(){
 	string selection;
 	int switchselection = 0;
 	bool game = false;
+	bool stoploop = false;
 	OptionStorage option;
 	KeyStore key;
 	
@@ -47,14 +48,20 @@ int main(){
 			cout << "You walked along the beach." << endl;
 			option.setaaaabDefault(true);
 			game = true;
+			stoploop = true;
 			break;
 		case 2:
 			cout << "You started to head inland." << endl;
 			option.setaaaacDefault(true);
 			game = false;
+			stoploop = true;
 			break;
 		}
-	} while (switchselection == 0);
+		if (switchselection >= 3 && switchselection >= 0){
+			cout << "Enter a valid number. (1 or 2)" << endl;
+			continue;
+		}
+	} while (stoploop == false);
 
 	if (game == true){
 		do{
@@ -67,13 +74,19 @@ int main(){
 				cout << "You picked up the key." << endl;
 				option.setaaaadDefault(true);
 				key.setkabDefault(true);
+				stoploop = true;
 				break;
 			case 2:
 				cout << "You left the key." << endl;
 				option.setaaaaeDefault(true);
+				stoploop = true;
 				break;
 			}
-		} while (switchselection == 0);
+			if (switchselection >= 3 && switchselection >= 0){
+				cout << "Enter a valid number. (1 or 2)" << endl;
+				continue;
+			}
+		} while (stoploop == false);
 	}
 	else{
 		do{
@@ -85,13 +98,19 @@ int main(){
 			case 1:
 				cout << "You Entered the temple." << endl;
 				option.setaaaajDefault(true);
+				stoploop = true;
 				break;
 			case 2:
 				cout << "You leave the temple to look around the island more." << endl;
 				option.setaaaakDefault(true);
+				stoploop = true;
 				break;
 			}
-		} while (switchselection == 0);
+			if (switchselection >= 3 && switchselection >= 0){
+				cout << "Enter a valid number. (1 or 2)" << endl;
+				continue;
+			}
+		} while (stoploop == false);
 	}
 
 
