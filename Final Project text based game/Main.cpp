@@ -54,7 +54,7 @@ int main(){
 			game = false;
 			break;
 		}
-	} while (switchselection = 0);
+	} while (switchselection == 0);
 
 	if (game == true){
 		do{
@@ -73,7 +73,7 @@ int main(){
 				option.setaaaaeDefault(true);
 				break;
 			}
-		} while (switchselection = 0);
+		} while (switchselection == 0);
 	}
 	else{
 		do{
@@ -83,10 +83,15 @@ int main(){
 			cin >> switchselection;
 			switch (switchselection){
 			case 1:
-				cout << "Test" << endl;
+				cout << "You Entered the temple." << endl;
+				option.setaaaajDefault(true);
+				break;
+			case 2:
+				cout << "You leave the temple to look around the island more." << endl;
+				option.setaaaakDefault(true);
 				break;
 			}
-		} while (switchselection = 0);
+		} while (switchselection == 0);
 	}
 
 
