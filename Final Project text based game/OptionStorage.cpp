@@ -41,3 +41,17 @@ void OptionStorage::setaaaakDefault(bool value){
 bool OptionStorage::getaaaakDefault(){
 	return aaaak;
 }
+
+void OptionStorage::setaaaafDefault(bool value){
+	aaaaf = value;
+}
+bool OptionStorage::getaaaafDefault(){
+	return aaaaf;
+}
+
+void OptionStorage::setaaaagDefault(bool value){
+	aaaag = value;
+}
+bool OptionStorage::getaaaagDefault(){
+	return aaaag;
+}

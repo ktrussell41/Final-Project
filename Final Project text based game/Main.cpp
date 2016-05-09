@@ -114,6 +114,31 @@ int main(){
 		} while (stoploop == false);
 	}
 
+	if (option.getaaaadDefault() == true){
+		do{
+			cout << "You picked up the key. Continue looking on the beach or head inland?" << endl;
+			cout << "1. Continue down the beach." << endl;
+			cout << "2. Head inland." << endl;
+			cin >> switchselection;
+			switch (switchselection){
+			case 1:
+				cout << "You continue down the beach." << endl;
+				option.setaaaafDefault(true);
+				stoploop = true;
+				break;
+			case 2:
+				cout << "You start to head inland." << endl;
+				option.setaaaagDefault(true);
+				stoploop = true;
+				break;
+			}
+			if (switchselection >= 3 && switchselection >= 0){
+				cout << "Enter a valid number. (1 or 2)" << endl;
+				continue;
+			}
+		} while (stoploop == false);
+	}
+
 
 	system("pause");
 	return 0;
