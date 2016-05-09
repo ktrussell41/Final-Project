@@ -79,6 +79,7 @@ int main(){
 			case 2:
 				cout << "You left the key." << endl;
 				option.setaaaaeDefault(true);
+				key.setkabDefault(false);
 				stoploop = true;
 				break;
 			}
