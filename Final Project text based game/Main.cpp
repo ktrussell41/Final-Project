@@ -59,6 +59,7 @@ int main(){
 		}
 		if (switchselection >= 3 && switchselection >= 0){
 			cout << "Enter a valid number. (1 or 2)" << endl;
+			stoploop = false;
 			continue;
 		}
 	} while (stoploop == false);
@@ -85,6 +86,7 @@ int main(){
 			}
 			if (switchselection >= 3 && switchselection >= 0){
 				cout << "Enter a valid number. (1 or 2)" << endl;
+				stoploop = false;
 				continue;
 			}
 		} while (stoploop == false);
@@ -109,6 +111,7 @@ int main(){
 			}
 			if (switchselection >= 3 && switchselection >= 0){
 				cout << "Enter a valid number. (1 or 2)" << endl;
+				stoploop = false;
 				continue;
 			}
 		} while (stoploop == false);
@@ -134,6 +137,7 @@ int main(){
 			}
 			if (switchselection >= 3 && switchselection >= 0){
 				cout << "Enter a valid number. (1 or 2)" << endl;
+				stoploop = false;
 				continue;
 			}
 		} while (stoploop == false);
