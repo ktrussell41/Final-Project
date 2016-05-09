@@ -47,12 +47,14 @@ int main(){
 		case 1:
 			cout << "You walked along the beach." << endl;
 			option.setaaaabDefault(true);
+			option.setaaaacDefault(false);
 			game = true;
 			stoploop = true;
 			break;
 		case 2:
 			cout << "You started to head inland." << endl;
 			option.setaaaacDefault(true);
+			option.setaaaabDefault(false);
 			game = false;
 			stoploop = true;
 			break;
@@ -75,12 +77,14 @@ int main(){
 				cout << "You picked up the key." << endl;
 				option.setaaaadDefault(true);
 				key.setkabDefault(true);
+				option.setaaaaeDefault(false);
 				stoploop = true;
 				break;
 			case 2:
 				cout << "You left the key." << endl;
 				option.setaaaaeDefault(true);
 				key.setkabDefault(false);
+				option.setaaaadDefault(false);
 				stoploop = true;
 				break;
 			}
@@ -101,11 +105,13 @@ int main(){
 			case 1:
 				cout << "You Entered the temple." << endl;
 				option.setaaaajDefault(true);
+				option.setaaaakDefault(false);
 				stoploop = true;
 				break;
 			case 2:
 				cout << "You leave the temple to look around the island more." << endl;
 				option.setaaaakDefault(true);
+				option.setaaaajDefault(false);
 				stoploop = true;
 				break;
 			}
@@ -127,11 +133,13 @@ int main(){
 			case 1:
 				cout << "You continue down the beach." << endl;
 				option.setaaaafDefault(true);
+				option.setaaaagDefault(false);
 				stoploop = true;
 				break;
 			case 2:
 				cout << "You start to head inland." << endl;
 				option.setaaaagDefault(true);
+				option.setaaaafDefault(false);
 				stoploop = true;
 				break;
 			}
