@@ -6,6 +6,7 @@
 #include "OptionStorage.h"
 #include "KeyStore.h"
 #include "WeaponStore.h"
+#include "OptionRunning.h"
 
 using namespace std;
 
