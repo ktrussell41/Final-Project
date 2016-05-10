@@ -17,6 +17,7 @@ int main(){
 	bool stoploop = false;
 	OptionStorage option;
 	KeyStore key;
+	OptionRunning runOption;
 	
 	do{
 		cout << "Start game" << endl;
@@ -47,9 +48,7 @@ int main(){
 		switch (switchselection){
 		case 1:
 			cout << "You walked along the beach." << endl;
-			option.setaaaabDefault(true);
-			option.setaaaacDefault(false);
-			game = true;
+			runOption.runaaaabOption();
 			stoploop = true;
 			break;
 		case 2:
@@ -67,7 +66,8 @@ int main(){
 		}
 	} while (stoploop == false);
 
-	if (game == true){
+	
+	if (runOption.getgameDefault() == true){
 		do{
 			cout << "You walk along the beach and find a small rusted key. Pick it up or leave it?" << endl;
 			cout << "1. Pick it up." << endl;
