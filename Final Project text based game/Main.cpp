@@ -53,9 +53,7 @@ int main(){
 			break;
 		case 2:
 			cout << "You started to head inland." << endl;
-			option.setaaaacDefault(true);
-			option.setaaaabDefault(false);
-			game = false;
+			runOption.runaaaacOption();
 			stoploop = true;
 			break;
 		}
@@ -76,16 +74,12 @@ int main(){
 			switch (switchselection){
 			case 1:
 				cout << "You picked up the key." << endl;
-				option.setaaaadDefault(true);
-				key.setkabDefault(true);
-				option.setaaaaeDefault(false);
+				runOption.runaaaadOption();
 				stoploop = true;
 				break;
 			case 2:
 				cout << "You left the key." << endl;
-				option.setaaaaeDefault(true);
-				key.setkabDefault(false);
-				option.setaaaadDefault(false);
+				runOption.runaaaaeOption();
 				stoploop = true;
 				break;
 			}
@@ -105,14 +99,12 @@ int main(){
 			switch (switchselection){
 			case 1:
 				cout << "You Entered the temple." << endl;
-				option.setaaaajDefault(true);
-				option.setaaaakDefault(false);
+				runOption.runaaaajOption();
 				stoploop = true;
 				break;
 			case 2:
 				cout << "You leave the temple to look around the island more." << endl;
-				option.setaaaakDefault(true);
-				option.setaaaajDefault(false);
+				runOption.runaaaakOption();
 				stoploop = true;
 				break;
 			}

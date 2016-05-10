@@ -18,5 +18,9 @@ public:
 	bool getgameDefault();
 
 	void runaaaabOption();
-
+	void runaaaacOption();
+	void runaaaadOption();
+	void runaaaaeOption();
+	void runaaaajOption();
+	void runaaaakOption();
 };
