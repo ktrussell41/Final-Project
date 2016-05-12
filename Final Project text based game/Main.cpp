@@ -125,14 +125,12 @@ int main(){
 			switch (switchselection){
 			case 1:
 				cout << "You continue down the beach." << endl;
-				option.setaaaafDefault(true);
-				option.setaaaagDefault(false);
+				runOption.runaaaafOption();
 				stoploop = true;
 				break;
 			case 2:
 				cout << "You start to head inland." << endl;
-				option.setaaaagDefault(true);
-				option.setaaaafDefault(false);
+				runOption.runaaaagOption();
 				stoploop = true;
 				break;
 			}
@@ -144,6 +142,11 @@ int main(){
 		} while (stoploop == false);
 	}
 
+	if (option.getaaaafDefault() == true){
+		do{
+			cout << "You continued down the beach and found nothing. " << endl;
+		} while (stoploop == false);
+	}
 
 	system("pause");
 	return 0;

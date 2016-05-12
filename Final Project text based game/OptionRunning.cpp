@@ -44,3 +44,13 @@ void OptionRunning::runaaaakOption(){
 	option.setaaaakDefault(true);
 	option.setaaaajDefault(false);
 }
+
+void OptionRunning::runaaaafOption(){
+	option.setaaaafDefault(true);
+	option.setaaaagDefault(false);
+}
+
+void OptionRunning::runaaaagOption(){
+	option.setaaaagDefault(true);
+	option.setaaaafDefault(false);
+}
