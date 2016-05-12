@@ -144,7 +144,27 @@ int main(){
 
 	if (option.getaaaafDefault() == true){
 		do{
-			cout << "You continued down the beach and found nothing. " << endl;
+			cout << "You continued down the beach and found nothing. You head inland and find a temple. Enter the temple or Look around the inland more?" << endl;
+			cout << "1. Enter Temple." << endl;
+			cout << "2. Look around the island more." << endl;
+			cin >> switchselection;
+			switch (switchselection){
+			case 1:
+				cout << "You enter the temple." << endl;
+				runOption.runaaaajOption();
+				stoploop = true;
+				break;
+			case 2:
+				cout << "You look around the island more." << endl;
+				runOption.runaaaakOption();
+				stoploop = true;
+				break;
+			}
+			if (switchselection >= 3 && switchselection >= 0){
+				cout << "Enter a valid number. (1 or 2)" << endl;
+				stoploop = false;
+				continue;
+			}
 		} while (stoploop == false);
 	}
 
