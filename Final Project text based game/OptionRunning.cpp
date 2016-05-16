@@ -27,12 +27,14 @@ void OptionRunning::runaaaadOption(){
 	option.setaaaadDefault(true);
 	key.setkabDefault(true);
 	option.setaaaaeDefault(false);
+	game = true;
 }
 
 void OptionRunning::runaaaaeOption(){
 	option.setaaaaeDefault(true);
 	key.setkabDefault(false);
 	option.setaaaadDefault(false);
+	game = false;
 }
 
 void OptionRunning::runaaaajOption(){

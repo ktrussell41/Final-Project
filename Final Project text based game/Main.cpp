@@ -75,11 +75,13 @@ int main(){
 			case 1:
 				cout << "You picked up the key." << endl;
 				runOption.runaaaadOption();
+				game = true;
 				stoploop = true;
 				break;
 			case 2:
 				cout << "You left the key." << endl;
 				runOption.runaaaaeOption();
+				game = false;
 				stoploop = true;
 				break;
 			}
@@ -116,7 +118,7 @@ int main(){
 		} while (stoploop == false);
 	}
 
-	if (option.getaaaadDefault() == true){
+	if (option.getaaaadDefault()){
 		do{
 			cout << "You picked up the key. Continue looking on the beach or head inland?" << endl;
 			cout << "1. Continue down the beach." << endl;
@@ -142,7 +144,7 @@ int main(){
 		} while (stoploop == false);
 	}
 
-	if (option.getaaaafDefault() == true){
+	if (option.getaaaafDefault()){
 		do{
 			cout << "You continued down the beach and found nothing. You head inland and find a temple. Enter the temple or Look around the inland more?" << endl;
 			cout << "1. Enter Temple." << endl;
