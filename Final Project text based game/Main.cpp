@@ -65,7 +65,7 @@ int main(){
 	} while (stoploop == false);
 
 	
-	if (runOption.getgameDefault() == true){
+	if (option.getaaaabDefault()){
 		do{
 			cout << "You walk along the beach and find a small rusted key. Pick it up or leave it?" << endl;
 			cout << "1. Pick it up." << endl;
@@ -92,7 +92,7 @@ int main(){
 			}
 		} while (stoploop == false);
 	}
-	else{
+	if (option.getaaaacDefault()){
 		do{
 			cout << "You started to head inland. You see a temple. Enter it or look around the island more?" << endl;
 			cout << "1. Enter the temple." << endl;
