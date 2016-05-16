@@ -25,4 +25,6 @@ public:
 	void runaaaakOption();
 	void runaaaafOption();
 	void runaaaagOption();
+	void runaaaalOption();
+	void runaaaamOption();
 };

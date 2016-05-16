@@ -56,3 +56,13 @@ void OptionRunning::runaaaagOption(){
 	option.setaaaagDefault(true);
 	option.setaaaafDefault(false);
 }
+
+void OptionRunning::runaaaalOption(){
+	option.setaaaalDefault(true);
+	option.setaaaamDefault(false);
+}
+
+void OptionRunning::runaaaamOption(){
+	option.setaaaamDefault(true);
+	option.setaaaalDefault(false);
+}

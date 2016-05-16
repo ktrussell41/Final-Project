@@ -57,7 +57,7 @@ int main(){
 			stoploop = true;
 			break;
 		}
-		if (switchselection >= 3 && switchselection >= 0){
+		if (switchselection >= 3 && switchselection <= 0){
 			cout << "Enter a valid number. (1 or 2)" << endl;
 			stoploop = false;
 			continue;
@@ -85,7 +85,7 @@ int main(){
 				stoploop = true;
 				break;
 			}
-			if (switchselection >= 3 && switchselection >= 0){
+			if (switchselection >= 3 && switchselection <= 0){
 				cout << "Enter a valid number. (1 or 2)" << endl;
 				stoploop = false;
 				continue;
@@ -110,7 +110,7 @@ int main(){
 				stoploop = true;
 				break;
 			}
-			if (switchselection >= 3 && switchselection >= 0){
+			if (switchselection >= 3 && switchselection <= 0){
 				cout << "Enter a valid number. (1 or 2)" << endl;
 				stoploop = false;
 				continue;
@@ -136,7 +136,7 @@ int main(){
 				stoploop = true;
 				break;
 			}
-			if (switchselection >= 3 && switchselection >= 0){
+			if (switchselection >= 3 && switchselection <= 0){
 				cout << "Enter a valid number. (1 or 2)" << endl;
 				stoploop = false;
 				continue;
@@ -162,7 +162,33 @@ int main(){
 				stoploop = true;
 				break;
 			}
-			if (switchselection >= 3 && switchselection >= 0){
+			if (switchselection >= 3 && switchselection <= 0){
+				cout << "Enter a valid number. (1 or 2)" << endl;
+				stoploop = false;
+				continue;
+			}
+		} while (stoploop == false);
+	}
+
+	if (option.getaaaakDefault()){
+		do{
+			cout << "Keep looking around the island. Found an old hut made with, what look like poorly made bricks and a thatch roof. It has no door. Look inside the hut or go back to the temple." << endl;
+			cout << "1. Look indide the hut." << endl;
+			cout << "2. Go back to the temple." << endl;
+			cin >> switchselection;
+			switch (switchselection){
+			case 1:
+				cout << "You look iside the hut." << endl;
+				runOption.runaaaalOption();
+				stoploop = true;
+				break;
+			case 2:
+				cout << "You head back to the temple." << endl;
+				runOption.runaaaamOption();
+				stoploop = true;
+				break;
+			}
+			if (switchselection >= 3 && switchselection <= 0){
 				cout << "Enter a valid number. (1 or 2)" << endl;
 				stoploop = false;
 				continue;
