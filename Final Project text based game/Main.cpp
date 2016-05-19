@@ -48,12 +48,14 @@ int main(){
 		switch (switchselection){
 		case 1:
 			cout << "You walked along the beach." << endl;
-			runOption.runaaaabOption();
+			option.setaaaabDefault(true);
+			option.setaaaacDefault(false);
 			stoploop = true;
 			break;
 		case 2:
 			cout << "You started to head inland." << endl;
-			runOption.runaaaacOption();
+			option.setaaaacDefault(true);
+			option.setaaaabDefault(false);
 			stoploop = true;
 			break;
 		}
@@ -74,13 +76,17 @@ int main(){
 			switch (switchselection){
 			case 1:
 				cout << "You picked up the key." << endl;
-				runOption.runaaaadOption();
+				option.setaaaadDefault(true);
+				key.setkabDefault(true);
+				option.setaaaaeDefault(false);
 				game = true;
 				stoploop = true;
 				break;
 			case 2:
 				cout << "You left the key." << endl;
-				runOption.runaaaaeOption();
+				option.setaaaaeDefault(true);
+				key.setkabDefault(false);
+				option.setaaaadDefault(false);
 				game = false;
 				stoploop = true;
 				break;
@@ -101,12 +107,14 @@ int main(){
 			switch (switchselection){
 			case 1:
 				cout << "You Entered the temple." << endl;
-				runOption.runaaaajOption();
+				option.setaaaafDefault(true);
+				option.setaaaagDefault(false);
 				stoploop = true;
 				break;
 			case 2:
 				cout << "You leave the temple to look around the island more." << endl;
-				runOption.runaaaakOption();
+				option.setaaaagDefault(true);
+				option.setaaaafDefault(false);
 				stoploop = true;
 				break;
 			}
@@ -127,12 +135,14 @@ int main(){
 			switch (switchselection){
 			case 1:
 				cout << "You continue down the beach." << endl;
-				runOption.runaaaafOption();
+				option.setaaaafDefault(true);
+				option.setaaaagDefault(false);
 				stoploop = true;
 				break;
 			case 2:
 				cout << "You start to head inland." << endl;
-				runOption.runaaaagOption();
+				option.setaaaagDefault(true);
+				option.setaaaafDefault(false);
 				stoploop = true;
 				break;
 			}
@@ -153,12 +163,14 @@ int main(){
 			switch (switchselection){
 			case 1:
 				cout << "You enter the temple." << endl;
-				runOption.runaaaajOption();
+				option.setaaaajDefault(true);
+				option.setaaaakDefault(false);
 				stoploop = true;
 				break;
 			case 2:
 				cout << "You look around the island more." << endl;
-				runOption.runaaaakOption();
+				option.setaaaakDefault(true);
+				option.setaaaajDefault(false);
 				stoploop = true;
 				break;
 			}
@@ -179,12 +191,14 @@ int main(){
 			switch (switchselection){
 			case 1:
 				cout << "You look iside the hut." << endl;
-				runOption.runaaaalOption();
+				option.setaaaalDefault(true);
+				option.setaaaamDefault(false);
 				stoploop = true;
 				break;
 			case 2:
 				cout << "You head back to the temple." << endl;
-				runOption.runaaaamOption();
+				option.setaaaamDefault(true);
+				option.setaaaalDefault(false);
 				stoploop = true;
 				break;
 			}
