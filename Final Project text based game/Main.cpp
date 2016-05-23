@@ -210,6 +210,33 @@ int main(){
 		} while (stoploop == false);
 	}
 
+	if (option.getaaaalDefault()){
+		do {
+			cout << "Look inside the hut. As you head into the hut you see that there are 2 skeletons in what looks like ancient armor, holding ancient weapons. Leave the hut or pick up the weapons." << endl;
+			cout << "Leave the hut." << endl;
+			cout << "Pick up the weapons." << endl; 
+			cin >> switchselection;
+			switch (switchselection){
+			case 1:
+				cout << "You leave the hut." << endl;
+				option.setaaaanDefault(true);
+				option.setaaaaoDefault(false);
+				stoploop == true;
+				break;
+			case 2:
+				cout << "You pick up the weapons." << endl;
+				option.setaaaaoDefault(true);
+				option.setaaaanDefault(false);
+				stoploop == true;
+				break;
+			}
+			if (switchselection >= 3 && switchselection <= 0){
+				cout << "Enter a valid number. (1 or 2)" << endl;
+				stoploop = false;
+				continue;
+			}
+		} while (stoploop == false);
+	}
 	system("pause");
 	return 0;
 }

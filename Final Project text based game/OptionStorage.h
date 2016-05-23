@@ -12,6 +12,8 @@ private:
 	bool aaaag;
 	bool aaaal;
 	bool aaaam;
+	bool aaaan;
+	bool aaaao;
 public:
 	void setaaaabDefault(bool value);
 	bool getaaaabDefault();
@@ -42,4 +44,10 @@ public:
 
 	void setaaaamDefault(bool value);
 	bool getaaaamDefault();
+
+	void setaaaanDefault(bool value);
+	bool getaaaanDefault();
+
+	void setaaaaoDefault(bool value);
+	bool getaaaaoDefault();
 };
