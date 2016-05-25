@@ -257,6 +257,22 @@ int main(){
 			}
 		} while (stoploop == false);
 	}
+
+	if (option.getaaaapDefault()){
+		do {
+			cout << "You go back to the temple. The temple is overgrown. It's made of the same bricks as the hunt but made better. Enter the temple or go back to the boat." << endl;
+			cout << "1. Enter the temple." << endl;
+			cout << "2. Go back to the boat." << endl;
+			switch (switchselection){
+			case 1:
+				cout << "You enter the temple." << endl;
+				break;
+			case 2:
+				cout << "You went back to the boat." << endl;
+				break;
+			}
+		} while (stoploop = false);
+	}
 	system("pause");
 	return 0;
 }
