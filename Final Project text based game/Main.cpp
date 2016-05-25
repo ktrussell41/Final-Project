@@ -237,6 +237,26 @@ int main(){
 			}
 		} while (stoploop == false);
 	}
+
+	if (option.getaaaanDefault){
+		do{
+			cout << "You grab the ancient sword by the handle. As you look lift the sword you notice the cracks in the blade. You swing it to test its weight, when you do the blade falls apart and only the hilt remains. Take the hilt or leave it." << endl;
+			cout << "1. Take the hilt." << endl;
+			cout << "2. Leave the hilt." << endl;
+			cin >> switchselection;
+			switch (switchselection){
+			case 1:
+				cout << "You took the hilt." << endl;
+				option.setaaaapDefault(true);
+				option.setaaaaqDefault(false);
+				stoploop == true;
+			case 2:
+				option.setaaaaqDefault(true);
+				option.setaaaapDefault(false);
+				stoploop == false;
+			}
+		} while (stoploop == false);
+	}
 	system("pause");
 	return 0;
 }
