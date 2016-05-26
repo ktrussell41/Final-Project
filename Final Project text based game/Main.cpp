@@ -255,6 +255,11 @@ int main(){
 				option.setaaaapDefault(false);
 				stoploop == false;
 			}
+			if (switchselection >= 3 && switchselection <= 0){
+				cout << "Enter a valid number. (1 or 2)" << endl;
+				stoploop = false;
+				continue;
+			}
 		} while (stoploop == false);
 	}
 
@@ -277,7 +282,21 @@ int main(){
 				option.setaaaarDefault(false);
 				break;
 			}
+			if (switchselection >= 3 && switchselection <= 0){
+				cout << "Enter a valid number. (1 or 2)" << endl;
+				stoploop = false;
+				continue;
+			}
 		} while (stoploop = false);
+	}
+
+	if (option.getaaaarDefault){
+		cout << "You enter the temple and see a door. You push it open and begin to enter the temple. You enter a big room with a passage way between two staircases that lead to a becony overlooking the room your standing in. The belcony seems to go all the way around the room connecting obove the entrance you just entered. Go up the stairs or go through the passage way." << endl;
+		cout << "1. Go up the stairs." << endl;
+		cout << "2. Go through the passage way" << endl;
+		switch (switchselection){
+			
+		}
 	}
 	system("pause");
 	return 0;
