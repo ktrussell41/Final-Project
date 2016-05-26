@@ -27,7 +27,7 @@
     <ClCompile Include="WeaponStore.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="OptionRunning.cpp">
+    <ClCompile Include="MiscStore.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -41,7 +41,7 @@
     <ClInclude Include="WeaponStore.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="OptionRunning.h">
+    <ClInclude Include="MiscStore.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

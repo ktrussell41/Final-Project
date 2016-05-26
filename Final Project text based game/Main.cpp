@@ -6,7 +6,6 @@
 #include "OptionStorage.h"
 #include "KeyStore.h"
 #include "WeaponStore.h"
-#include "OptionRunning.h"
 
 using namespace std;
 
@@ -17,7 +16,6 @@ int main(){
 	bool stoploop = false;
 	OptionStorage option;
 	KeyStore key;
-	OptionRunning runOption;
 	
 	do{
 		cout << "Start game" << endl;

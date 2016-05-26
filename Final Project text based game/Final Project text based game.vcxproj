@@ -65,14 +65,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="KeyStore.cpp" />
-    <ClCompile Include="OptionRunning.cpp" />
+    <ClCompile Include="MiscStore.cpp" />
     <ClCompile Include="OptionStorage.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="WeaponStore.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="KeyStore.h" />
-    <ClInclude Include="OptionRunning.h" />
+    <ClInclude Include="MiscStore.h" />
     <ClInclude Include="OptionStorage.h" />
     <ClInclude Include="WeaponStore.h" />
   </ItemGroup>
