@@ -6,6 +6,7 @@
 #include "OptionStorage.h"
 #include "KeyStore.h"
 #include "WeaponStore.h"
+#include "MiscStore.h"
 
 using namespace std;
 
@@ -16,6 +17,7 @@ int main(){
 	bool stoploop = false;
 	OptionStorage option;
 	KeyStore key;
+	MiscStore misc;
 	
 	do{
 		cout << "Start game" << endl;
@@ -264,9 +266,15 @@ int main(){
 			switch (switchselection){
 			case 1:
 				cout << "You enter the temple." << endl;
+				option.setaaaarDefault(true);
+				misc.setmabDefault(true);
+				option.setaaaasDefault(false);
 				break;
 			case 2:
 				cout << "You went back to the boat." << endl;
+				option.setaaaasDefault(true);
+				misc.setmabDefault(false);
+				option.setaaaarDefault(false);
 				break;
 			}
 		} while (stoploop = false);
