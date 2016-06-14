@@ -221,13 +221,13 @@ int main(){
 				cout << "You leave the hut." << endl;
 				option.setaaaanDefault(true);
 				option.setaaaaoDefault(false);
-				stoploop == true;
+				stoploop = true;
 				break;
 			case 2:
 				cout << "You pick up the weapons." << endl;
 				option.setaaaaoDefault(true);
 				option.setaaaanDefault(false);
-				stoploop == true;
+				stoploop = true;
 				break;
 			}
 			if (switchselection >= 3 && switchselection <= 0){
@@ -238,7 +238,7 @@ int main(){
 		} while (stoploop == false);
 	}
 
-	if (option.getaaaanDefault){
+	if (option.getaaaanDefault()){
 		do{
 			cout << "You grab the ancient sword by the handle. As you look lift the sword you notice the cracks in the blade. You swing it to test its weight, when you do the blade falls apart and only the hilt remains. Take the hilt or leave it." << endl;
 			cout << "1. Take the hilt." << endl;
@@ -249,11 +249,13 @@ int main(){
 				cout << "You took the hilt." << endl;
 				option.setaaaapDefault(true);
 				option.setaaaaqDefault(false);
-				stoploop == true;
+				stoploop = true;
+				break;
 			case 2:
 				option.setaaaaqDefault(true);
 				option.setaaaapDefault(false);
-				stoploop == false;
+				stoploop = true;
+				break;
 			}
 			if (switchselection >= 3 && switchselection <= 0){
 				cout << "Enter a valid number. (1 or 2)" << endl;
@@ -274,12 +276,14 @@ int main(){
 				option.setaaaarDefault(true);
 				misc.setmabDefault(true);
 				option.setaaaasDefault(false);
+				stoploop = true;
 				break;
 			case 2:
 				cout << "You went back to the boat." << endl;
 				option.setaaaasDefault(true);
 				misc.setmabDefault(false);
 				option.setaaaarDefault(false);
+				stoploop = true;
 				break;
 			}
 			if (switchselection >= 3 && switchselection <= 0){
@@ -290,14 +294,35 @@ int main(){
 		} while (stoploop = false);
 	}
 
-	if (option.getaaaarDefault){
-		cout << "You enter the temple and see a door. You push it open and begin to enter the temple. You enter a big room with a passage way between two staircases that lead to a becony overlooking the room your standing in. The belcony seems to go all the way around the room connecting obove the entrance you just entered. Go up the stairs or go through the passage way." << endl;
-		cout << "1. Go up the stairs." << endl;
-		cout << "2. Go through the passage way" << endl;
-		switch (switchselection){
-			
-		}
+	if (option.getaaaarDefault()){
+		do{
+			cout << "You enter the temple and see a door. You push it open and begin to enter the temple. You enter a big room with a passage way between two staircases that lead to a becony overlooking the room your standing in. The belcony seems to go all the way around the room connecting obove the entrance you just entered. Go up the stairs or go through the passage way." << endl;
+			cout << "1. Go up the stairs." << endl;
+			cout << "2. Go through the passage way" << endl;
+			switch (switchselection){
+			case 1:
+				cout << "You go up the stairs." << endl;
+				option.setaaaatDefault(true);
+				option.setaaaauDefault(false);
+				stoploop = true;
+				break;
+			case 2:
+				cout << "You go through the passage way." << endl;
+				option.setaaaauDefault(true);
+				option.setaaaatDefault(false);
+				stoploop = true;
+				break;
+			}
+			if (switchselection >= 3 && switchselection <= 0){
+				cout << "Enter a valid number. (1 or 2)" << endl;
+				stoploop = false;
+				continue;
+			}
+		} while (stoploop = false);
 	}
+
+	cout << "End of Demo" << endl;
+
 	system("pause");
 	return 0;
 }

@@ -1,0 +1,20 @@
+﻿Build started 6/14/2016 8:15:05 AM.
+     1>Project "\\dav.edu\students\HS17$\ktrussell41\My Documents\Visual Studio 2013\Projects\Final Project text based game\Final Project text based game\Final Project text based game.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt OptionStorage.cpp Main.cpp
+         OptionStorage.cpp
+         Main.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"\\dav.edu\students\HS17$\ktrussell41\My Documents\Visual Studio 2013\Projects\Final Project text based game\Release\Final Project text based game.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"\\dav.edu\students\HS17$\ktrussell41\My Documents\Visual Studio 2013\Projects\Final Project text based game\Release\Final Project text based game.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"\\dav.edu\students\HS17$\ktrussell41\My Documents\Visual Studio 2013\Projects\Final Project text based game\Release\Final Project text based game.lib" /MACHINE:X86 /SAFESEH Release\KeyStore.obj
+         Release\MiscStore.obj
+         Release\OptionStorage.obj
+         Release\Main.obj
+         Release\WeaponStore.obj
+         Generating code
+         Finished generating code
+         Final Project text based game.vcxproj -> \\dav.edu\students\HS17$\ktrussell41\My Documents\Visual Studio 2013\Projects\Final Project text based game\Release\Final Project text based game.exe
+     1>Done Building Project "\\dav.edu\students\HS17$\ktrussell41\My Documents\Visual Studio 2013\Projects\Final Project text based game\Final Project text based game\Final Project text based game.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.82
